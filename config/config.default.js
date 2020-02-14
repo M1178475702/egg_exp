@@ -22,6 +22,11 @@ module.exports = appInfo => {
         ],
     };
 
+    config.upload = {
+        dir: `${appInfo.baseDir}/public/upload/`,
+        host: 'localhost:8880'
+    };
+
     config.middleware = ['cors'];
 
     config.cluster = {
