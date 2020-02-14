@@ -1,0 +1,54 @@
+{
+  "name": "EGG_BASE_SEQ",
+  "version": "1.0.0",
+  "description": "基于sequelize的egg框架",
+  "private": true,
+  "dependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-register": "^6.26.0",
+    "continuation-local-storage": "latest",
+    "egg": "^2.14.2",
+    "egg-cluster": "^1.26.0",
+    "egg-http-proxy": "^0.1.0",
+    "egg-knex": "^2.2.0",
+    "egg-logger": "latest",
+    "egg-logview": "^2.0.0",
+    "egg-scripts": "^2.11.0",
+    "egg-sequelize": "^4.3.1",
+    "egg-validate": "^2.0.2",
+    "moment": "^2.24.0",
+    "mysql2": "^1.7.0",
+    "sequelize": "^4.37.6",
+    "string-width": "latest"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "egg-bin": "^4.8.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.20.0",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "start": "egg-scripts start --daemon --title=egg-server-oret",
+    "stop": "egg-scripts stop --title=egg-server-oret",
+    "dev": "egg-bin dev --workers 1 --port 8880",
+    "debug": "egg-bin debug --workers 1 --port 6122",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

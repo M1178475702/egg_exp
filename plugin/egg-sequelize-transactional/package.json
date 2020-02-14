@@ -1,0 +1,11 @@
+{
+  "name": "egg-sequelize-transactional",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "eggPlugin": {
+    "name": "sequelizeTransactional"
+  },
+  "dependencies": {
+
+  }
+}

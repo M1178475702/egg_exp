@@ -1,0 +1,11 @@
+{
+  "name": "egg-controller-exception-handler",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "eggPlugin": {
+    "name": "controllerExceptionHandler"
+  },
+  "dependencies": {
+
+  }
+}
